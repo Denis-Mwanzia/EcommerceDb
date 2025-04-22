@@ -53,4 +53,12 @@ CREATE TABLE sizeCategory (
     categoryName VARCHAR(100) NOT NULL
 );
 
+-- Table: sizeOption
+CREATE TABLE sizeOption (
+    sizeOptionID INT AUTO_INCREMENT PRIMARY KEY,
+    sizeValue VARCHAR(20) NOT NULL,
+    sizeCategoryID INT,
+    FOREIGN KEY (sizeCategoryID) REFERENCES sizeCategory(sizeCategoryID)
+);
+
 
