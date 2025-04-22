@@ -47,4 +47,10 @@ CREATE TABLE color (
     colorName VARCHAR(50) NOT NULL
 );
 
+-- Table: sizeCategory
+CREATE TABLE sizeCategory (
+    sizeCategoryID INT AUTO_INCREMENT PRIMARY KEY,
+    categoryName VARCHAR(100) NOT NULL
+);
+
 
