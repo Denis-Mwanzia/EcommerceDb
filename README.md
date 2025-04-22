@@ -34,6 +34,7 @@ Here’s a breakdown of the main tables and their purposes:
 | `attributeCategory` | Groups attributes into categories |
 | `attributeType`     | Defines data type of attributes |
 | `productAttribute`  | Stores custom product attributes |
+| `customer`  | Stores customer information |
 
 ## 🛠️ Technologies Used
 
