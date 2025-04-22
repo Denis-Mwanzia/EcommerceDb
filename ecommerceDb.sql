@@ -15,4 +15,10 @@ CREATE TABLE brand (
     brandName VARCHAR(100) NOT NULL
 );
 
+-- Table: productCategory
+CREATE TABLE productCategory (
+    categoryID INT AUTO_INCREMENT PRIMARY KEY,
+    categoryName VARCHAR(100) NOT NULL
+);
+
 
