@@ -33,4 +33,12 @@ CREATE TABLE product (
     FOREIGN KEY (categoryID) REFERENCES productCategory(categoryID)
 );
 
+-- Table: productImage
+CREATE TABLE productImage (
+    imageID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT,
+    imageUrl VARCHAR(255),
+    FOREIGN KEY (productID) REFERENCES product(productID)
+);
+
 
