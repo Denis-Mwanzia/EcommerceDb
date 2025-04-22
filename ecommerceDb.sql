@@ -72,4 +72,14 @@ CREATE TABLE productVariation (
     FOREIGN KEY (sizeOptionID) REFERENCES sizeOption(sizeOptionID)
 );
 
+-- Table: productItem
+CREATE TABLE productItem (
+    itemID INT AUTO_INCREMENT PRIMARY KEY,
+    variationID INT,
+    stockQuantity INT,
+    price DECIMAL(10, 2),
+    sku VARCHAR(100),
+    FOREIGN KEY (variationID) REFERENCES productVariation(variationID)
+);
+
 
