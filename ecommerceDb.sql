@@ -88,4 +88,10 @@ CREATE TABLE attributeCategory (
     categoryName VARCHAR(100) NOT NULL
 );
 
+-- Table: attribute_type
+CREATE TABLE attributeType (
+    typeID INT AUTO_INCREMENT PRIMARY KEY,
+    typeName VARCHAR(50) NOT NULL
+);
+
 
