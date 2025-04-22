@@ -61,4 +61,15 @@ CREATE TABLE sizeOption (
     FOREIGN KEY (sizeCategoryID) REFERENCES sizeCategory(sizeCategoryID)
 );
 
+-- Table: productVariation
+CREATE TABLE productVariation (
+    variationID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT,
+    colorID INT,
+    sizeOptionID INT,
+    FOREIGN KEY (productID) REFERENCES product(productID),
+    FOREIGN KEY (colorID) REFERENCES color(colorID),
+    FOREIGN KEY (sizeOptionID) REFERENCES sizeOption(sizeOptionID)
+);
+
 
