@@ -82,4 +82,10 @@ CREATE TABLE productItem (
     FOREIGN KEY (variationID) REFERENCES productVariation(variationID)
 );
 
+-- Table: attributeCategory
+CREATE TABLE attributeCategory (
+    attributeCategoryID INT AUTO_INCREMENT PRIMARY KEY,
+    categoryName VARCHAR(100) NOT NULL
+);
+
 
