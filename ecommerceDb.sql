@@ -88,10 +88,21 @@ CREATE TABLE attributeCategory (
     categoryName VARCHAR(100) NOT NULL
 );
 
--- Table: attribute_type
+-- Table: attributeType
 CREATE TABLE attributeType (
     typeID INT AUTO_INCREMENT PRIMARY KEY,
     typeName VARCHAR(50) NOT NULL
 );
 
-
+-- Table: productAttribute
+CREATE TABLE productAttribute (
+    attributeID INT AUTO_INCREMENT PRIMARY KEY,
+    productID INT,
+    attributeCategoryID INT,
+    typeID INT,
+    attributeName VARCHAR(100),
+    attributeValue VARCHAR(255),
+    FOREIGN KEY (productID) REFERENCES product(productID),
+    FOREIGN KEY (attributeCategoryID) REFERENCES attributeCategory(attributeCategoryID),
+    FOREIGN KEY (typeID) REFERENCES attributeType(typeID)
+);
