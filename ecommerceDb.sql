@@ -15,6 +15,17 @@ CREATE TABLE brand (
     brandName VARCHAR(100) NOT NULL
 );
 
+-- Table: customer
+CREATE TABLE customer (
+    customerID INT AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(100) NOT NULL,
+    lastName VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    phoneNumber VARCHAR(20),
+    address TEXT,
+    registrationDate DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Table: productCategory
 CREATE TABLE productCategory (
     categoryID INT AUTO_INCREMENT PRIMARY KEY,
