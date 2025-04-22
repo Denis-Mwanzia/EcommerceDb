@@ -9,4 +9,10 @@ CREATE DATABASE ecommercedb;
 -- Use E-commerce Database
 USE ecommercedb;
 
+-- Table: brand
+CREATE TABLE brand (
+    brandID INT AUTO_INCREMENT PRIMARY KEY,
+    brandName VARCHAR(100) NOT NULL
+);
+
 
