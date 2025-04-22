@@ -41,4 +41,10 @@ CREATE TABLE productImage (
     FOREIGN KEY (productID) REFERENCES product(productID)
 );
 
+-- Table: color
+CREATE TABLE color (
+    colorID INT AUTO_INCREMENT PRIMARY KEY,
+    colorName VARCHAR(50) NOT NULL
+);
+
 
