@@ -14,7 +14,7 @@ Products in this platform are created under specific **brands** and **categories
 
 ## 📐E-commerce Database Entity-Relationship Diagram (ERD)
 
-![E-commerce ERD](./Ecommerce_ERD.png)
+![E-commerce ERD](./Ecommerce_ERD.jpg)
 
 ## 🗃️ Database Tables
 
